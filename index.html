@@ -32,186 +32,195 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=
   
 <style>
-  /* Global Reset & Layout Fix */
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-  }
-
-  body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: #f5f5f5;
-  }
-
-  /* Header */
-  .header {
-    background-color: #f44336;
-    color: black;
-    padding: 12px;
-    text-align: left;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Search Bar */
-  .search-bar {
-    background-color: #f44336;
-    padding: 1px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .search-bar input {
-    flex: 1;
-    padding: 8px;
-    border-radius: 9px;
-    border: none;
-    background-color: #f1f1f1;
-  }
-
-  /* Menu Icons */
-  .menu-icons {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    background: white;
-  }
-
-  .menu-icons div {
-    text-align: center;
-    font-size: 12px;
-  }
-
-  /* Sections */
-  .section {
-    margin: 10px;
-  }
-
-  .section-title {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-
-  .live-videos,
-  .video-grid {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-  }
-
-  /* Promo & Product Cards */
-  .promo-banner,
-  .product-card {
-    margin: 10px;
-    background: red;
-    border-radius: 10px;
-    padding: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-
-  .promo-banner img,
-  .product-card img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  /* Bottom Navigation */
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #ccc;
-    padding: 6px 0;
-  }
-
-  .bottom-nav div {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  /* Badge (Cart Notification) */
-  .badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 12px;
-  }
-
-  /* Hidden Form for Cart Checkout */
-  .hidden-form {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 300px;
-    z-index: 100;
-  }
-
-  .form-section input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-
-  .form-section button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  .form-section button:hover {
-    background-color: #45a049;
-  }
-
-  /* Harga & Diskon */
-  .harga .normal {
-    text-decoration: line-through;
-    color: #888;
-    margin-right: 8px;
-  }
-
-  .harga .diskon {
-    color: #e53935;
-    font-weight: bold;
-  }
-
-  /* Responsive for Mobile */
-  @media (max-width: 600px) {
+    * {
+      margin: 0;
+      padding: 20%;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+      background-color: #f5f5f5;
+    }
+    .header {
+      background-color: #f44336;
+      color: black;
+      padding: 12px;
+      text-align: left-side;
+      position: sticky;
+      top: 0;
+    }
+    .search-bar {
+      background-color: #f44336;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 8px;
+      border-radius: 9px;
+      border: none;
+      background-color: #f1f1f1;
+    }
+    .menu-icons {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      background: white;
+    }
+    .menu-icons div {
+      text-align: center;
+      font-size: 12px;
+    }
+    .section {
+      margin: 10px;
+    }
     .section-title {
-      font-size: 20px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .live-videos, .video-grid {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+   
+    .promo-banner, .product-card {
+      margin: 10px;
+      background: red;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .promo-banner img, .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #ccc;
+      padding: 6px 0;
+    }
+    .bottom-nav div {
+      font-size: 12px;
+      text-align: center;
+    }
+    .badge {
+      background: red;
+      color: white;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+  </style>
+  
+   <style>
+    body {
+ 
+      background-color: #f5f5f5;
+    } {
+      font-family: Arial, sans-serif;
+      margin: 20px;
     }
 
-    .card {
-      max-width: 90%;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-  }
-</style>
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cart-icon {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 12px;
+    }
+
+    .hidden-form {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      width: 300px;
+      z-index: 100;
+    }
+
+    .form-section input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-section button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background-color: #45a049;
+    }
+	
+	  @media (max-width: 600px) {
+      .section-title {
+        font-size: 20px;
+      }
+
+      .card {
+        max-width: 90%;
+      }
+    }
+	
+	
+	.harga .normal {
+      text-decoration: line-through;
+      color: #888;
+      margin-right: 8px;
+    }
+
+    .harga .diskon {
+      color: #e53935;
+      font-weight: bold;
+    }
+  </style>
 
 </head>
 <body>
