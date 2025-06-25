@@ -29,21 +29,26 @@
 
 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=<style>
-  /* Reset & Global Settings */
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=
+  
+<style>
+  /* Global Reset & Layout Fix */
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
   }
 
   body {
     width: 100%;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-color: #f5f5f5;
   }
 
+  /* Header */
   .header {
     background-color: #f44336;
     color: black;
@@ -51,11 +56,15 @@
     text-align: left;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  /* Search Bar */
   .search-bar {
     background-color: #f44336;
-    padding: 8px;
+    padding: 1px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -69,6 +78,7 @@
     background-color: #f1f1f1;
   }
 
+  /* Menu Icons */
   .menu-icons {
     display: flex;
     justify-content: space-around;
@@ -81,6 +91,7 @@
     font-size: 12px;
   }
 
+  /* Sections */
   .section {
     margin: 10px;
   }
@@ -88,28 +99,32 @@
   .section-title {
     margin-bottom: 5px;
     font-weight: bold;
-    font-size: 22px;
   }
 
-  .live-videos, .video-grid {
+  .live-videos,
+  .video-grid {
     display: flex;
     gap: 10px;
     overflow-x: auto;
   }
 
-  .promo-banner, .product-card {
+  /* Promo & Product Cards */
+  .promo-banner,
+  .product-card {
     margin: 10px;
     background: red;
     border-radius: 10px;
     padding: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
 
-  .promo-banner img, .product-card img {
+  .promo-banner img,
+  .product-card img {
     width: 100%;
     border-radius: 8px;
   }
 
+  /* Bottom Navigation */
   .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -127,22 +142,19 @@
     text-align: center;
   }
 
+  /* Badge (Cart Notification) */
   .badge {
-    background: red;
-    color: white;
-    font-size: 10px;
-    padding: 2px 6px;
-    border-radius: 50%;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
   }
 
-  .cart-icon {
-    cursor: pointer;
-    position: relative;
-  }
-
+  /* Hidden Form for Cart Checkout */
   .hidden-form {
     display: none;
     position: absolute;
@@ -150,7 +162,7 @@
     right: 20px;
     background: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     width: 300px;
     z-index: 100;
@@ -177,6 +189,7 @@
     background-color: #45a049;
   }
 
+  /* Harga & Diskon */
   .harga .normal {
     text-decoration: line-through;
     color: #888;
@@ -188,19 +201,14 @@
     font-weight: bold;
   }
 
-  /* Responsif */
+  /* Responsive for Mobile */
   @media (max-width: 600px) {
     .section-title {
       font-size: 20px;
     }
 
     .card {
-      max-width: 100%;
-    }
-
-    .hidden-form {
-      width: 90%;
-      right: 5%;
+      max-width: 90%;
     }
   }
 </style>
